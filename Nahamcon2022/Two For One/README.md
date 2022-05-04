@@ -22,4 +22,5 @@ Second: add authenticator token and get OTP to send reset password request.
 </script>
 ```
 
-Login to with `admin/1` and get flag: ![Alt text](flag.png?raw=true "Title")  
+Login to with `admin/1` and get flag:  
+![Alt text](flag.png?raw=true "Title")  

